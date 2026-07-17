@@ -1,0 +1,90 @@
+{
+  "id": "ckpt_1784269454_post_sva_backup",
+  "name": "post_sva_backup",
+  "timestamp": "2026-07-17T06:24:14.384109+00:00",
+  "systems": {
+    "emerge": {
+      "available": true
+    },
+    "sms": {
+      "available": true,
+      "output": "\u2139\ufe0f  MemGPT not fully available (No module named 'memgpt'). Using fallback mode.\nWarning: hrr library not installed. Using fallback numpy-based HRR.\n\u267b\ufe0f  Restored 2 VSA vectors from persistent store\n{\n  \"vectors\": 2,\n  \"history_turns\": 0,\n  \"store_bytes\": 661239,\n  \"store_file\": \"/home/craig/.NOTTHEONETOEDIT/profiles/thotheauphis/memory/store/vsa_vectors.fs\",\n  \"status\": \"active\"\n}",
+      "exit_code": 0
+    },
+    "sva": {
+      "available": true,
+      "entries": 4,
+      "dimension": 1024
+    },
+    "gate": {
+      "entries": 1,
+      "total_bytes": 2600,
+      "max_bytes": 524288000,
+      "usage_pct": 0.0,
+      "expired_cleared": true
+    }
+  },
+  "sva_index": {
+    "2a55d6459eeb5f59": {
+      "key": "2a55d6459eeb5f59",
+      "summary": "Warp bridge test: identity layer initialized",
+      "created_at": 1784269417.4621277,
+      "turn_count": 0,
+      "access_count": 0
+    },
+    "c01e277e3b316e2c": {
+      "key": "c01e277e3b316e2c",
+      "summary": "Warp bridge test: identity layer re-verified",
+      "created_at": 1784269418.0381072,
+      "turn_count": 0,
+      "access_count": 0
+    },
+    "25281ff6d23988da": {
+      "key": "25281ff6d23988da",
+      "summary": "{\"step\": \"bridge_validation\", \"status\": \"in_progress\", \"data\": {\"test\": true, \"timestamp\": 1784269418.0392935}}",
+      "created_at": 1784269418.0400784,
+      "turn_count": 0,
+      "access_count": 0
+    },
+    "e3b0c44298fc1c14": {
+      "key": "e3b0c44298fc1c14",
+      "summary": "",
+      "created_at": 1784269418.0423043,
+      "turn_count": 0,
+      "access_count": 0
+    }
+  },
+  "gate_index": {
+    "mem_d55c92a7d225fbdd": {
+      "ptr": "mem_d55c92a7d225fbdd",
+      "bytes": 2600,
+      "preview": "Rust compiler output: error[E0308]: mismatched typesRust compiler output: error[E0308]: mismatched typesRust compiler output: error[E0308]: mismatched typesRust compiler output: error[E0308]: mismatched typesRust compiler output: error[E0308]: mismatched typesRust compiler output",
+      "turns": 0,
+      "access_count": 1,
+      "written_at": 1784268522.1364667,
+      "ttl": 3600
+    }
+  },
+  "custom_state": {
+    "step": "sva_backup",
+    "batch_id": "wf_sva_backup_1784269453",
+    "result": {
+      "id": "wf_sva_backup_1784269453",
+      "status": "done",
+      "results": [
+        {
+          "index": 0,
+          "name": "write_file",
+          "status": "done",
+          "written": 11,
+          "path": "/tmp/sva_backup.json"
+        }
+      ],
+      "errors": null,
+      "completed_at": "2026-07-17T06:24:14.372830+00:00",
+      "total": 1,
+      "success": 1,
+      "failed": 0
+    }
+  }
+}
