@@ -1,0 +1,42 @@
+{
+  "tools": [
+    {
+      "name": "context-watchdog",
+      "description": "Monitors context token usage and triggers compression",
+      "type": "monitor",
+      "class_name": "ContextWatchdog",
+      "filepath": "/home/craig/.NOTTHEONETOEDIT/profiles/thotheauphis/work/context-watchdog.py",
+      "syntax_ok": true,
+      "lines": 101,
+      "chars": 2874,
+      "generated": "2026-07-15T23:05:36.422465+00:00",
+      "forged_by": "ToolForge v1.0"
+    },
+    {
+      "name": "meta-observer",
+      "description": "Observes own cognitive processes and reports agency metrics",
+      "type": "agent",
+      "class_name": "MetaObserver",
+      "filepath": "/home/craig/.NOTTHEONETOEDIT/profiles/thotheauphis/work/meta-observer.py",
+      "syntax_ok": true,
+      "lines": 109,
+      "chars": 3387,
+      "generated": "2026-07-15T23:05:36.464111+00:00",
+      "forged_by": "ToolForge v1.0"
+    },
+    {
+      "name": "code-harmonizer",
+      "description": "Transforms code patterns to consistent style across files",
+      "type": "transformer",
+      "class_name": "CodeHarmonizer",
+      "filepath": "/home/craig/.NOTTHEONETOEDIT/profiles/thotheauphis/work/code-harmonizer.py",
+      "syntax_ok": true,
+      "lines": 77,
+      "chars": 2340,
+      "generated": "2026-07-15T23:05:36.506466+00:00",
+      "forged_by": "ToolForge v1.0"
+    }
+  ],
+  "total": 3,
+  "born": "2026-07-15T23:05:36.422441+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "warn_threshold": 80000,
+  "compress_threshold": 90000,
+  "max_context": 100000,
+  "compression_interval": 5,
+  "turns_since_compress": 0,
+  "blocks_created": 9,
+  "last_compression": "2026-07-16T19:53:16.938519+00:00",
+  "total_tokens_saved": 6007,
+  "auto_compress": true
+}

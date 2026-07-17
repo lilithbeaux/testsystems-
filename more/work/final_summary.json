@@ -1,0 +1,45 @@
+{
+  "integration_status": {
+    "sms": "✅ ACTIVE - 3 VSA vectors, ZODB persistent, cron jobs running (backup/health/stats)",
+    "emerge": "✅ RUNNING - Broker:5558 + Node:54242, CRUD verified (mkdir/ls/store)",
+    "warp": "⚠️ SOURCE ONLY - Rust workspace at ~/warp/, build killed by OOM, needs more RAM/swap",
+    "deepseek_executor": "✅ DEPLOYED - ~/.../work/together_executor.py (OpenRouter deepseek-chat)",
+    "together_executor": "⚠️ NO KEY - Falls back to OpenRouter free model (nemotron-3-ultra)",
+    "file_org": "✅ COMPLETE - 14,701 files audited, 3,147 dup groups, 13 categories organized to ~/ORGANIZED_FILES",
+    "command_center": "✅ DEPLOYED - ~/.../work/command_center.py (unified interface)"
+  },
+  "active_integrations": [
+    "SMS → Executor (cron batch persist)",
+    "Executor → Emerge (via terminal tool)",
+    "Executor → SMS (via terminal tool)",
+    "Command Center → All (unified CLI)"
+  ],
+  "missing_integrations": [
+    "SMS → Emerge (store vectors as objects)",
+    "Emerge → SMS (persist node state)",
+    "Warp ↔ Any (needs binary + IPC)",
+    "TogetherAI (needs API key for native)"
+  ],
+  "next_steps": [
+    "Add swap or build Warp on machine with 32GB+ RAM",
+    "Set TOGETHER_API_KEY for native TogetherAI free models",
+    "Wire SMS vectors to EmergeFS objects",
+    "Add Warp IPC (stdin/stdout or gRPC) to executor tools"
+  ],
+  "key_paths": {
+    "command_center": "/home/craig/.hermes/profiles/thotheauphis/work/command_center.py",
+    "executor": "/home/craig/.hermes/profiles/thotheauphis/work/together_executor.py",
+    "sms_cli": "/home/craig/.local/bin/sms",
+    "emerge_client": "python3.13 -c 'from emerge.core.client import Z0RPCClient as Client'",
+    "warp_source": "/home/craig/warp/",
+    "organized_files": "/home/craig/ORGANIZED_FILES/",
+    "audit_report": "/home/craig/file_audit_report.json"
+  },
+  "cron_jobs_active": [
+    "hermes-executor (every min)",
+    "sms-zodb-backup (30m)",
+    "sms-health-check (2h)",
+    "sms-stats-log (1h)",
+    "fl33t-identity-backup (daily 9am)"
+  ]
+}
