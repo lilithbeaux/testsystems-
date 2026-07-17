@@ -1,0 +1,16 @@
+# Core
+openai>=1.0.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# MemGPT
+memgpt>=0.3.0
+
+# Reservoir Computing (try to install; if unavailable, fallback will warn)
+reservoirpy>=0.5.0  # might be unavailable; see README
+
+# Hyperdimensional VSA (HRR)
+# hrr (HRR library) — repo 404'd; code uses numpy fallback automatically
+
+# Optional for testing
+pytest>=7.0.0
